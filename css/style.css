@@ -40,6 +40,16 @@ ul li {
 	padding: 20px;
 }
 
+.blk-text {
+	margin: 50px 0;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.blk-text .star:before,
+.blk-text .star:after {
+	border-bottom: 3px solid black;
+}
+
 /*HEADER*/
 
 /*Top Nav*/
@@ -64,14 +74,6 @@ ul li {
 }
 
 /*MAIN*/
-.portfolio {
-	margin: 50px 0;
-	font-weight: bold;
-}
-.portfolio .star:before,
-.portfolio .star:after {
-	border-bottom: 3px solid black;
-}
 
 /*TEST IMAGE*/
 .col_content .test-image {
@@ -81,8 +83,16 @@ ul li {
 }
 
 /*About*/
-.about .teaser p {
+.about.teaser p {
 	text-transform: none;
 	font-size: 20px;
 	padding: 20px 0;
+}
+.download i {
+	padding-right: 5px;
+}
+
+/*Contact Me*/
+.contact_me form label {
+	display: block;
 }
