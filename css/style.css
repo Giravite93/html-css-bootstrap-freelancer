@@ -1,12 +1,31 @@
 /*COMMON*/
-.text-c {
-	text-align: center;
-}
 .text-r {
 	text-align: right;
 }
 ul li {
 	list-style-type: none;
+}
+.star {
+	display: inline-block;
+	position: relative;
+	font-size: 40px;
+}
+.star:before,
+.star:after {
+	content: "";
+	position: absolute;
+	border-bottom: 3px solid white;
+	top: 50%;
+	width: 300%;
+	transform: translateY(-50%);
+}
+.star:before {
+	right: 100%;
+	margin-right: 15px;
+}
+.star:after {
+	left: 100%;
+	margin-left: 15px;
 }
 
 /*HEADER*/
@@ -29,4 +48,21 @@ ul li {
 .burger i {
 	border: 1px solid white;
 	padding: 5px;
+	color: #888888;
+}
+
+.teaser {
+	background-color: #1abc9c;
+	color: white;
+	text-transform: uppercase;
+	padding: 20px;
+}
+
+/*MAIN*/
+.portfolio {
+	margin-top: 50px;
+}
+.portfolio .star:before,
+.portfolio .star:after {
+	border-bottom: 3px solid black;
 }
