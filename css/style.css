@@ -87,12 +87,14 @@ ul li {
 	text-transform: none;
 	font-size: 20px;
 	padding: 20px 0;
+	text-align: left;
 }
 .download i {
 	padding-right: 5px;
 }
 
 /*Contact Me*/
-.contact_me form label {
+.contact_me form label,
+.contact_me form .btn {
 	display: block;
 }
