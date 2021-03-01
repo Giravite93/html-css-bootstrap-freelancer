@@ -5,6 +5,7 @@
 
 ul li {
 	list-style-type: none;
+	display: inline-block;
 }
 
 .star {
@@ -53,8 +54,10 @@ ul li {
 /*HEADER*/
 
 /*Top Nav*/
-.top-nav {
-	background-color: #2c3e50;
+.top-nav,
+.information,
+.copyright {
+	background-color: #3a546d;
 	color: white;
 	padding: 20px;
 }
@@ -97,4 +100,40 @@ ul li {
 .contact_me form label,
 .contact_me form .btn {
 	display: block;
+}
+
+/*FOOTER*/
+/*Information*/
+footer .information p {
+	font-size: 25px;
+	font-weight: bold;
+}
+footer .information [class*="col-"] p:first-child {
+	text-transform: uppercase;
+}
+footer .information ul {
+	padding: 0;
+}
+footer .information ul li {
+	border: 1px solid white;
+	border-radius: 50%;
+	height: 50px;
+	width: 50px;
+}
+footer .information ul li i {
+	font-size: 20px;
+	padding: 0 10px;
+}
+footer .information ul li .fab {
+	line-height: 50px;
+}
+footer .information a {
+	color: #1abc9c;
+}
+
+footer .information [class*="col-"] {
+	padding: 20px 0;
+}
+footer .copyright {
+	background-color: #2c3e50;
 }
