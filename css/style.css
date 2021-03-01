@@ -2,9 +2,11 @@
 .text-r {
 	text-align: right;
 }
+
 ul li {
 	list-style-type: none;
 }
+
 .star {
 	display: inline-block;
 	position: relative;
@@ -26,6 +28,16 @@ ul li {
 .star:after {
 	left: 100%;
 	margin-left: 15px;
+}
+
+.title h2 {
+	font-size: 40px;
+}
+.teaser {
+	background-color: #1abc9c;
+	color: white;
+	text-transform: uppercase;
+	padding: 20px;
 }
 
 /*HEADER*/
@@ -51,18 +63,26 @@ ul li {
 	color: #888888;
 }
 
-.teaser {
-	background-color: #1abc9c;
-	color: white;
-	text-transform: uppercase;
-	padding: 20px;
-}
-
 /*MAIN*/
 .portfolio {
-	margin-top: 50px;
+	margin: 50px 0;
+	font-weight: bold;
 }
 .portfolio .star:before,
 .portfolio .star:after {
 	border-bottom: 3px solid black;
+}
+
+/*TEST IMAGE*/
+.col_content .test-image {
+	background-color: blue;
+	height: 200px;
+	margin-top: 20px;
+}
+
+/*About*/
+.about .teaser p {
+	text-transform: none;
+	font-size: 20px;
+	padding: 20px 0;
 }
