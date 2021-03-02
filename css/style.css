@@ -3,11 +3,24 @@ ul li {
 	list-style-type: none;
 	display: inline-block;
 }
+a {
+	color: inherit;
+}
+a:hover {
+	text-decoration: none;
+}
+
+.small-wrapper {
+	max-width: 900px;
+	width: 80%;
+	margin: 0 auto;
+}
 
 .star {
 	display: inline-block;
 	position: relative;
 	font-size: 40px;
+	padding: 20px 0;
 }
 .star:before,
 .star:after {
@@ -47,6 +60,16 @@ ul li {
 	border-bottom: 3px solid black;
 }
 
+.btn_green {
+	background-color: #1abc9c;
+	border: 1px solid white;
+	color: white;
+}
+.btn_green:hover {
+	background-color: white;
+	color: #1abc9c;
+}
+
 /*HEADER*/
 
 /*Top Nav*/
@@ -71,16 +94,23 @@ ul li {
 	padding: 5px;
 	color: #888888;
 }
-
-/*MAIN*/
-
-/*TEST IMAGE*/
-.col_content .test-image {
-	background-color: blue;
-	height: 200px;
-	margin-top: 20px;
+.menu .menu_list li {
+	margin-left: 40px;
+}
+.menu .menu_list li a:hover {
+	color: #1abc9c;
 }
 
+/*Teaser*/
+.teaser .avatar {
+	max-width: 15%;
+}
+
+/*MAIN*/
+/*Images Portfolio*/
+.portfolio .col_content {
+	margin-bottom: 30px;
+}
 /*About*/
 .about.teaser p {
 	text-transform: none;
@@ -93,9 +123,30 @@ ul li {
 }
 
 /*Contact Me*/
-.contact_me form label,
-.contact_me form .btn {
-	display: block;
+.contact_me .btn_green:hover {
+	background-color: #3a546d;
+	color: white;
+}
+.contact_me #form-contact label {
+	display: none;
+}
+#form-contact input {
+	height: 50px;
+}
+#form-contact input,
+#form-contact textarea {
+	border-top: 0;
+	border-right: 0;
+	border-left: 0;
+	box-shadow: none;
+	border-radius: 0;
+	padding-left: 0;
+	padding-bottom: 36px;
+}
+#form-contact input::placeholder,
+#form-contact textarea::placeholder {
+	color: #3a546d;
+	font-size: 20px;
 }
 
 /*FOOTER*/
@@ -132,4 +183,11 @@ footer .information [class*="col-"] {
 }
 footer .copyright {
 	background-color: #2c3e50;
+}
+
+/*Media Query*/
+@media speech {
+	.contact_me #form-contact label {
+		display: inherit;
+	}
 }
