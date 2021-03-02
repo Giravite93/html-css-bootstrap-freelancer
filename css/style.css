@@ -103,7 +103,8 @@ a:hover {
 
 /*Teaser*/
 .teaser .avatar {
-	max-width: 15%;
+	width: 15%;
+	min-width: 150px;
 }
 
 /*MAIN*/
