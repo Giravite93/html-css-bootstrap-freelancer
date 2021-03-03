@@ -16,7 +16,23 @@ a:hover {
 	margin: 0 auto;
 }
 
+/*METODO + SEMPLICE*/
 .star {
+	font-size: 40px;
+	padding: 20px 0;
+}
+.star::after,
+.star::before {
+	display: inline-block;
+	content: "";
+	border-bottom: 3px solid white;
+	vertical-align: middle;
+	width: 100px;
+	margin: 0 10px;
+}
+
+/*ALTRO MODO*/
+/* .star {
 	display: inline-block;
 	position: relative;
 	font-size: 40px;
@@ -38,7 +54,7 @@ a:hover {
 .star:after {
 	left: 100%;
 	margin-left: 15px;
-}
+} */
 
 .title h2 {
 	font-size: 40px;
